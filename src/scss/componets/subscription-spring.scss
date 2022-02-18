@@ -1,0 +1,80 @@
+.subscription-spring{
+	background-color: #F1F5EB;
+
+	margin: 62px auto;
+	&__body{
+		padding: 56px 0;
+		max-width: 1037px;
+		margin: 0 auto;
+		background-image: url("../img/subscription-spring.svg");
+		background-position: center right;
+		background-repeat: no-repeat;
+	}
+	&__title{
+		font-family: $font2;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #324C9A;
+		margin-bottom: 20px;
+	}
+	&__anons{
+		font-family: $font2;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+		color: #000000;
+		margin-bottom: 26px;
+	}
+	&__input-inner{
+		position: relative;
+		max-width: 587px;
+	}
+	.form-control{
+		background: #E7E4E4;
+		border-radius: 50px;
+		font-family: $font2;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+		color: #324C9A;
+		height: 54px;
+		padding-left: 24px;
+		width: 352px;
+		flex: 0 0 100%;
+		border: none;
+		z-index: 1;
+		position: relative;
+		&::placeholder{
+			color: #324C9A;
+		}
+	}
+	&__submit{
+		width: 352px;
+		border-radius: 50px;
+		top: 0;
+		right: 0;
+		position: absolute;
+		font-family: $font2;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+		color: #FFFFFF;
+		background-color: #324C9A;
+		height: 54px;
+		border: none;
+		text-align: right;
+		padding-right: 50px;
+	}
+}

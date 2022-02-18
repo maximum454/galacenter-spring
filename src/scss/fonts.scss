@@ -8,6 +8,16 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'GothamPro';
+	src: url('../fonts/GothamPro/GothamPro.eot');
+	src: local('GothamPro-Black'),
+	url('../fonts/GothamPro/GothamPro.woff') format('woff'),
+	url('../fonts/GothamPro/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 
 $font2: 'GothamPro', sans-serif;

@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GothamPro';
+  src: url("../fonts/GothamPro/GothamPro.eot");
+  src: local("GothamPro-Black"), url("../fonts/GothamPro/GothamPro.woff") format("woff"), url("../fonts/GothamPro/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .banner-spring {
   margin-bottom: 77px;
 }
@@ -166,4 +174,109 @@
   line-height: 50px;
   letter-spacing: 0.05em;
   color: inherit;
+}
+
+.subscription-spring {
+  background-color: #F1F5EB;
+  margin: 62px auto;
+}
+
+.subscription-spring__body {
+  padding: 56px 0;
+  max-width: 1037px;
+  margin: 0 auto;
+  background-image: url("../img/subscription-spring.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.subscription-spring__title {
+  font-family: "GothamPro", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #324C9A;
+  margin-bottom: 20px;
+}
+
+.subscription-spring__anons {
+  font-family: "GothamPro", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 26px;
+}
+
+.subscription-spring__input-inner {
+  position: relative;
+  max-width: 587px;
+}
+
+.subscription-spring .form-control {
+  background: #E7E4E4;
+  border-radius: 50px;
+  font-family: "GothamPro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #324C9A;
+  height: 54px;
+  padding-left: 24px;
+  width: 352px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border: none;
+  z-index: 1;
+  position: relative;
+}
+
+.subscription-spring .form-control::-webkit-input-placeholder {
+  color: #324C9A;
+}
+
+.subscription-spring .form-control::-moz-placeholder {
+  color: #324C9A;
+}
+
+.subscription-spring .form-control:-ms-input-placeholder {
+  color: #324C9A;
+}
+
+.subscription-spring .form-control::-ms-input-placeholder {
+  color: #324C9A;
+}
+
+.subscription-spring .form-control::placeholder {
+  color: #324C9A;
+}
+
+.subscription-spring__submit {
+  width: 352px;
+  border-radius: 50px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  font-family: "GothamPro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background-color: #324C9A;
+  height: 54px;
+  border: none;
+  text-align: right;
+  padding-right: 50px;
 }
