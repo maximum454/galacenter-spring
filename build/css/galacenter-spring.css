@@ -14,6 +14,24 @@
   font-style: normal;
 }
 
+.btn--sping {
+  border-radius: 50px;
+  font-family: "GothamPro", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #324C9A;
+  border: 1px solid #324C9A;
+  padding: 13px 1.4rem;
+}
+
+.articles {
+  border-bottom: none;
+}
+
 .banner-spring {
   margin-bottom: 77px;
 }

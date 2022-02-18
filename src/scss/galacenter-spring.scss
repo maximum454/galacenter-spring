@@ -1,5 +1,24 @@
 @import "./fonts";
 
+.btn{
+	&--sping{
+		border-radius: 50px;
+		font-family: $font2;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+		color: #324C9A;
+		border: 1px solid #324C9A;
+		padding: 13px 1.4rem;
+	}
+}
+.articles{
+	border-bottom: none;
+}
+
 @import "componets/banner-spring";
 @import "componets/collections-spring";
 @import "componets/subscription-spring";
