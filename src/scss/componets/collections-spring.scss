@@ -1,0 +1,137 @@
+.collections-spring {
+	&__body{
+		max-width: 920px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-areas: 'beauty look look look'
+							'detox cleaning dacha dacha'
+							'interior cleaning autoseason running'
+							'leisure leisure leisure leisure';
+		grid-gap: 20px;
+		grid-template-columns: repeat(4,215px);
+		grid-template-rows: repeat(4, 317px);
+	}
+	&__item{
+		background-color: #ccc;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+		color: #fff;
+		position: relative;
+		padding: 20px;
+		text-decoration: none;
+		display: block;
+		transition: opacity .3s ease;
+		&:hover{
+			opacity: .7;
+			transition: opacity .3s ease;
+		}
+		&--beauty{
+			grid-area: beauty;
+			background-image: url("../img/beauty.png");
+			.collections-spring__name{
+				position: absolute;
+				top: 165px;
+			}
+		}
+		&--look{
+			grid-area: look;
+			background-image: url("../img/look.png");
+			.collections-spring__name{
+				position: absolute;
+				top: 165px;
+				right: 98px;
+			}
+		}
+		&--detox{
+			grid-area: detox;
+			background-image: url("../img/detox.png");
+			background-position: center bottom;
+			background-color: #fff;
+			color: #D597E4;
+			.collections-spring__name{
+				position: absolute;
+				top: 59px;
+				text-align: center;
+				width: 100%;
+				left: 0;
+			}
+		}
+		&--cleaning{
+			grid-area: cleaning;
+			background-image: url("../img/cleaning.png");
+			background-position: left bottom;
+			background-color: #43900E;
+			color: #FFF500;
+			.collections-spring__name{
+				text-align: right;
+				position: absolute;
+				top: 127px;
+				right: 15px;
+			}
+		}
+		&--dacha{
+			grid-area: dacha;
+			background-image: url("../img/dacha.png");
+			background-position: right center;
+			background-color: #FFCB00;
+			color: #985FA6;
+			.collections-spring__name{
+				top: 127px;
+				left: 32px;
+				position: absolute;
+			}
+		}
+		&--interior{
+			grid-area: interior;
+			background-image: url("../img/interior.png");
+			.collections-spring__name{
+				position: absolute;
+				top: 24px;
+			}
+		}
+		&--autoseason{
+			grid-area: autoseason;
+			background-image: url("../img/autoseason.png");
+			background-position: left bottom;
+			background-color: #324C9A;
+			color: #D597E4;
+			.collections-spring__name{
+				position: absolute;
+				top: 24px;
+			}
+		}
+		&--running{
+			grid-area: running;
+			background-image: url("../img/running.png");
+			background-position: left bottom;
+			background-color: #4098EA;
+			color: #FFF500;
+			.collections-spring__name{
+				text-align: right;
+				position: absolute;
+				top: 24px;
+				right: 25px;
+			}
+		}
+		&--leisure{
+			grid-area: leisure;
+			background-image: url("../img/leisure.png");
+			color: #FFF500;
+			.collections-spring__name{
+				position: absolute;
+				top: 127px;
+				left: 115px;
+			}
+		}
+	}
+	&__name{
+		font-family: $font2;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 50px;
+		letter-spacing: 0.05em;
+		color: inherit;
+	}
+}
