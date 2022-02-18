@@ -1,0 +1,332 @@
+.header {
+	position: relative;
+	background-color: #F1F5F9;
+	margin-bottom: 40px;
+    &.open{
+        z-index: 100;
+    }
+	&__top{
+		padding: 20px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+        .header-delivery{
+            font-family: $font1;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            color: #A4A9BB;
+            cursor: pointer;
+            display: none;
+            span {
+                color: #324C9A;
+                margin-left: 8px;
+            }
+        }
+	}
+	&__logo{
+		max-width: 294px;
+		width: 100%;
+		flex-shrink: 0;
+		margin-right: 20px;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__search{
+		width: 100%;
+		max-width: 524px;
+		position: relative;
+		form{
+			position: relative;
+			height: 44px;
+		}
+		.form-control{
+			height: 100%;
+			padding: 13px 10px 11px 48px;
+			&::placeholder{
+				font-family: $font1;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 20px;
+				color: #A4A9BB;
+			}
+		}
+		&-btn{
+			position: absolute;
+			top: 50%;
+			left: 12px;
+			margin-top: -12px;
+			display: block;
+			border: none;
+			background-color: transparent;
+			background-image: url("../img/icons-sprite.svg#search-gray");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			width: 24px;
+			height: 24px;
+		}
+		&-close{
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			margin-top: -12px;
+			border: none;
+			background-color: transparent;
+			background-image: url("../img/icons-sprite.svg#close");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			width: 24px;
+			height: 24px;
+			display: none;
+			cursor: pointer;
+			&.show{
+				display: block;
+			}
+		}
+		&-bottom{
+			display: none;
+		}
+	}
+	&__phone{
+		a{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 27px;
+			color: #333333;
+			text-decoration: none;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				opacity: .7;
+			}
+		}
+		span{
+			display: block;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 20px;
+			color: #A4A9BB;
+			cursor: pointer;
+			transition: all .3s ease;
+			&:hover{
+				transition: all .3s ease;
+				color: #324C9A;
+			}
+		}
+		flex-shrink: 0;
+		margin: 0 10px;
+	}
+	&__auth{
+		flex-shrink: 0;
+        display: flex;
+		a{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 20px;
+			color: #324C9A;
+			text-decoration: none;
+			margin-right: 32px;
+			transition: all .3s ease;
+            display: flex;
+            align-items: center;
+			&:hover{
+				transition: all .3s ease;
+				opacity: .7;
+			}
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+    &__auth-basket{
+        background: rgba(68, 121, 163, 0.12);
+    }
+	&__bottom{
+		padding: 20px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.header__search,
+		.header__auth,
+        .header-delivery{
+			display: none;
+		}
+	}
+
+    &__fix{
+        background-color: #fff;
+        padding: 20px 0;
+        box-shadow: 0px 2px 6px rgba(50, 76, 154, 0.18);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        top: -100%;
+        transition: top 0.3s ease;
+        .d-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-delivery{
+            margin-left: 0;
+            margin-right: auto;
+        }
+        .btn{
+            margin-right: 40px;
+        }
+    }
+	
+	.btn{
+		max-width: 223px;
+		width: 100%;
+        &.d-desktop{
+            display: block;
+        }
+        &.d-mobile{
+            display: none;
+        }
+	}
+    
+	@include r(1023){
+		&__logo{
+			max-width: 223px;
+		}
+		&__auth{
+			display: none;
+		}
+		&__top{
+            .header-delivery {
+                display: block;
+                .icon-delivery{
+                    top: 10px;
+                }
+                span{
+                    display: block;
+                    margin-left: 38px;
+                    font-size: 17px;
+                }
+            }
+        }
+		&__search{
+			display: none;
+		}
+		&__bottom{
+			.btn{
+				margin-right: 36px;
+			}
+			.header__search{
+				display: block;
+			}
+			.header__auth{
+				display: flex;
+				margin: 0 12px;
+				.icon-basket-btn,
+				.icon-login{
+					margin: 0;
+				}
+				a{
+					margin-right: 20px;
+					&:last-of-type{
+						margin-right: 0;
+					}
+				}
+			}
+            .header-delivery{
+                display: none;
+            }
+		}
+	}
+    @include r(767){
+        &__phone{
+           display: none;
+        }
+        &__top{
+            display: none;
+        }
+        &__bottom{
+			.btn{
+				margin-right: 36px;
+                .icon{
+                    display: none;
+                }
+			}
+            .nav{
+                display: none;
+            }
+			.header__search{
+				display: none;
+			}
+			.header__auth{
+				display: none;
+			}
+            .header-delivery {
+                display: block;
+                .icon-delivery{
+                    top: 10px;
+                }
+                span{
+                    display: block;
+                    margin-left: 38px;
+                    font-size: 17px;
+                }
+            }
+		}
+        .btn{            
+            &.d-desktop{
+                display: none;
+            }
+            &.d-mobile{
+                display: block;
+            }
+        }
+    }
+    @include r(374){
+    
+        &__bottom{
+            gap: 20px;
+			.btn{
+				margin-right: 0;
+                .icon{
+                    display: none;
+                }
+			}
+            .nav{
+                display: none;
+            }
+			.header__search{
+				display: none;
+			}
+			.header__auth{
+				display: none;
+			}
+            .header-delivery {
+                display: block;
+                .icon-delivery{
+                    display: none;
+                }
+                span{
+                    margin-left: 0;
+                }
+            }
+		}
+        .btn{            
+            &.d-desktop{
+                display: none;
+            }
+            &.d-mobile{
+                display: block;
+            }
+        }
+    }
+}
