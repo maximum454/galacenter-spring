@@ -3,7 +3,7 @@
 
 	margin: 62px auto;
 	&__body{
-		padding: 56px 0;
+		padding: 56px 20px;
 		max-width: 1037px;
 		margin: 0 auto;
 		background-image: url("../img/subscription-spring.svg");
@@ -27,7 +27,6 @@
 		font-size: 14px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-		text-transform: capitalize;
 		color: #000000;
 		margin-bottom: 26px;
 	}
@@ -76,5 +75,49 @@
 		border: none;
 		text-align: right;
 		padding-right: 50px;
+	}
+	@include r (952){
+		&__body{
+			padding: 56px 20px;
+			background-image: none;
+			text-align: center;
+		}
+		&__input-inner{
+			position: relative;
+			max-width: 587px;
+			margin: 0 auto;
+		}
+	}
+	@include r(767){
+		&__title{
+			font-size: 12px;
+			line-height: 25px;
+			margin-bottom: 16px;
+		}
+		&__anons{
+			font-size: 12px;
+			line-height: 25px;
+			margin-bottom: 19px;
+		}
+		.form-control{
+			margin: 0 auto 28px;
+			font-size: 14px;
+			line-height: 25px;
+			height: 27px;
+			width: 100%;
+			text-align: center;
+			&::placeholder{
+				color: #324C9A;
+			}
+		}
+		&__submit{
+			position: relative;
+			padding: 0;
+			text-align: center;
+			height: 27px;
+			font-size: 12px;
+			line-height: 25px;
+			width: 100%;
+		}
 	}
 }

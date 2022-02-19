@@ -47,6 +47,10 @@
   margin-bottom: 77px;
 }
 
+.banner-spring img {
+  display: block;
+}
+
 .collections-spring {
   margin-bottom: 62px;
 }
@@ -217,7 +221,7 @@
 }
 
 .subscription-spring__body {
-  padding: 56px 0;
+  padding: 56px 20px;
   max-width: 1037px;
   margin: 0 auto;
   background-image: url("../img/subscription-spring.svg");
@@ -243,7 +247,6 @@
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #000000;
   margin-bottom: 26px;
 }
@@ -423,6 +426,18 @@
     font-size: 18px;
     line-height: 40px;
   }
+
+  .subscription-spring__body {
+    padding: 56px 20px;
+    background-image: none;
+    text-align: center;
+  }
+
+  .subscription-spring__input-inner {
+    position: relative;
+    max-width: 587px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -548,5 +563,56 @@
   .collections-spring__name {
     font-size: 12px;
     line-height: 20px;
+  }
+
+  .subscription-spring__title {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 16px;
+  }
+
+  .subscription-spring__anons {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 19px;
+  }
+
+  .subscription-spring .form-control {
+    margin: 0 auto 28px;
+    font-size: 14px;
+    line-height: 25px;
+    height: 27px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscription-spring .form-control::-webkit-input-placeholder {
+    color: #324C9A;
+  }
+
+  .subscription-spring .form-control::-moz-placeholder {
+    color: #324C9A;
+  }
+
+  .subscription-spring .form-control:-ms-input-placeholder {
+    color: #324C9A;
+  }
+
+  .subscription-spring .form-control::-ms-input-placeholder {
+    color: #324C9A;
+  }
+
+  .subscription-spring .form-control::placeholder {
+    color: #324C9A;
+  }
+
+  .subscription-spring__submit {
+    position: relative;
+    padding: 0;
+    text-align: center;
+    height: 27px;
+    font-size: 12px;
+    line-height: 25px;
+    width: 100%;
   }
 }
