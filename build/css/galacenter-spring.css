@@ -48,7 +48,7 @@
 }
 
 .banner-spring img {
-  display: block;
+  margin: 0 auto;
 }
 
 .collections-spring {
@@ -324,6 +324,10 @@
     margin-bottom: 50px;
   }
 
+  .collections-spring {
+    margin-bottom: 50px;
+  }
+
   .collections-spring__body {
     grid-template-rows: repeat(4, 249px);
     grid-gap: 10px;
@@ -427,6 +431,10 @@
     line-height: 40px;
   }
 
+  .subscription-spring {
+    margin: 50px auto;
+  }
+
   .subscription-spring__body {
     padding: 56px 20px;
     background-image: none;
@@ -442,6 +450,10 @@
 
 @media only screen and (max-width: 767px) {
   .banner-spring {
+    margin-bottom: 27px;
+  }
+
+  .collections-spring {
     margin-bottom: 27px;
   }
 
@@ -563,6 +575,16 @@
   .collections-spring__name {
     font-size: 12px;
     line-height: 20px;
+  }
+
+  .subscription-spring {
+    margin: 27px auto;
+  }
+
+  .subscription-spring__body {
+    padding: 20px;
+    background-image: none;
+    text-align: center;
   }
 
   .subscription-spring__title {

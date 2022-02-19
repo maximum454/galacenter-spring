@@ -136,6 +136,7 @@
 		color: inherit;
 	}
 	@include r(952){
+		margin-bottom: 50px;
 		&__body{
 			grid-template-rows: repeat(4, 249px);
 			grid-gap: 10px;
@@ -223,6 +224,7 @@
 		}
 	}
 	@include r(767){
+		margin-bottom: 27px;
 		&__body{
 			grid-template-areas: 'beauty look look'
 							'detox cleaning dacha'
