@@ -1,7 +1,9 @@
 @import "./mixin";
 @import "./fonts";
 
-
+body{
+	background-color: #B2E0E7;
+}
 .btn{
 	&--sping{
 		border-radius: 50px;
@@ -25,3 +27,4 @@
 @import "componets/banner-spring";
 @import "componets/collections-spring";
 @import "componets/subscription-spring";
+@import "componets/footer-spring";
