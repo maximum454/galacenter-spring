@@ -1,3 +1,9 @@
 .banner-spring{
 	margin-bottom: 77px;
+	@include r(952){
+		margin-bottom: 50px;
+	}
+	@include r(767){
+		margin-bottom: 27px;
+	}
 }
