@@ -71,49 +71,11 @@ body.parallax {
   margin-bottom: 0;
 }
 
-.products__info {
-  margin-bottom: 16px;
-}
-
-.products__name {
-  -webkit-line-clamp: 2;
-  height: 38px;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  margin-bottom: 7px;
-}
-
-.products__price {
-  margin-bottom: 0;
-}
-
-.products__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.products .add_to_cart_block {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.products .btn {
-  background-color: #EFE9D8;
-  padding: 10px 14px;
-}
-
-.products .btn img {
-  vertical-align: baseline;
-  margin-right: 8px;
+.products__inbox {
+  color: #999;
+  margin-top: -15px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .banner-spring {

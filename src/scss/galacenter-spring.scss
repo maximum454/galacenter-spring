@@ -45,35 +45,11 @@ body{
 	background-color: #fff;
 	padding: 10px 30px 30px;
 	margin-bottom: 0;
-	&__info{
-		margin-bottom: 16px;
-	}
-	&__name{
-		-webkit-line-clamp: 2;
-		height: 38px;
-		text-overflow: ellipsis;
-		margin-bottom: 7px;
-	}
-	&__price{
-		margin-bottom: 0;
-	}
-	&__row{
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		flex-wrap: wrap;
-	}
-	.add_to_cart_block{
-		margin-left: auto;
-		margin-right: 0;
-	}
-	.btn{
-		background-color: #EFE9D8;
-		padding: 10px 14px;
-		img{
-			vertical-align: baseline;
-			margin-right: 8px;
-		}
+	&__inbox {
+		color: #999;
+		margin-top: -15px;
+		font-size: 13px;
+		margin-bottom: 10px;
 	}
 	@include r(767){
 		padding: 7px;
