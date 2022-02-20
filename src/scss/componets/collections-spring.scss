@@ -23,6 +23,13 @@
 		text-decoration: none;
 		display: block;
 		transition: opacity .3s ease;
+		&:before{
+			content: '';
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size:100%;
+			/*pointer-events: none;*/
+		}
 		&:hover{
 			opacity: .7;
 			transition: opacity .3s ease;
@@ -60,10 +67,15 @@
 		}
 		&--cleaning{
 			grid-area: cleaning;
-			background-image: url("../img/cleaning.png");
-			background-position: left bottom;
 			background-color: #43900E;
 			color: #FFF500;
+			&:before{
+				bottom: -16px;
+				left: 0;
+				background-image: url("../img/cleaning.png");
+				width: 174px;
+				height: 481px;
+			}
 			.collections-spring__name{
 				text-align: right;
 				position: absolute;
@@ -73,10 +85,15 @@
 		}
 		&--dacha{
 			grid-area: dacha;
-			background-image: url("../img/dacha.png");
-			background-position: right center;
 			background-color: #FFCB00;
 			color: #985FA6;
+			&:before{
+				top: -16px;
+				right: 0;
+				background-image: url("../img/dacha.png");
+				width: 166px;
+				height: 320px;
+			}
 			.collections-spring__name{
 				top: 127px;
 				left: 32px;
@@ -93,10 +110,15 @@
 		}
 		&--autoseason{
 			grid-area: autoseason;
-			background-image: url("../img/autoseason.png");
-			background-position: left bottom;
 			background-color: #324C9A;
 			color: #D597E4;
+			&:before{
+				bottom: -16px;
+				left: -16px;
+				background-image: url("../img/autoseason.png");
+				width: 178px;
+				height: 188px;
+			}
 			.collections-spring__name{
 				position: absolute;
 				top: 24px;
@@ -104,10 +126,15 @@
 		}
 		&--running{
 			grid-area: running;
-			background-image: url("../img/running.png");
-			background-position: left bottom;
 			background-color: #4098EA;
 			color: #FFF500;
+			&:before{
+				bottom: -21px;
+				left: -16px;
+				background-image: url("../img/running.png");
+				width: 139px;
+				height: 233px;
+			}
 			.collections-spring__name{
 				text-align: right;
 				position: absolute;
@@ -165,6 +192,11 @@
 			}
 			&--cleaning{
 				grid-area: cleaning;
+				&:before{
+					bottom: -10px;
+					width: 134px;
+					height: 369px;
+				}
 				.collections-spring__name{
 					text-align: left;
 					top: 50px;
@@ -174,6 +206,12 @@
 			}
 			&--dacha{
 				grid-area: dacha;
+				&:before{
+					top: -10px;
+					right: 0;
+					width: 124px;
+					height: 240px;
+				}
 				.collections-spring__name{
 					top: 50px;
 					max-width: 120px;
@@ -188,10 +226,14 @@
 			}
 			&--autoseason{
 				grid-area: autoseason;
-				background-image: url("../img/autoseason.png");
-				background-position: left bottom;
 				background-color: #324C9A;
 				color: #D597E4;
+				&:before{
+					bottom: -10px;
+					left: -10px;
+					width: 128px;
+					height: 138px;
+				}
 				.collections-spring__name{
 					position: absolute;
 					top: 24px;
@@ -199,10 +241,14 @@
 			}
 			&--running{
 				grid-area: running;
-				background-image: url("../img/running.png");
-				background-position: left bottom;
 				background-color: #4098EA;
 				color: #FFF500;
+				&:before{
+					bottom: -10px;
+					left: -16px;
+					width: 100px;
+					height: 170px;
+				}
 				.collections-spring__name{
 					text-align: right;
 					position: absolute;
@@ -264,8 +310,12 @@
 			}
 			&--cleaning{
 				grid-area: cleaning;
-				background-image: url("../img/cleaning-mobile.png");
-				background-size: 86px 176px;
+				&:before{
+					background-image: url("../img/cleaning-mobile.png");
+					bottom: -4px;
+					width: 86px;
+					height: 176px;
+				}
 				.collections-spring__name{
 					text-align: left;
 					top: 22px;
@@ -276,6 +326,12 @@
 			&--dacha{
 				grid-area: dacha;
 				background-size: 53px 102px;
+				&:before{
+					top: 20px;
+					right: 0;
+					width: 53px;
+					height: 102px;
+				}
 				.collections-spring__name{
 					top: 22px;
 					max-width: 120px;
@@ -293,8 +349,13 @@
 			}
 			&--autoseason{
 				grid-area: autoseason;
-				background-image: url("../img/autoseason-mobile.png");
-				background-size: 72px 76px;
+				&:before{
+					background-image: url("../img/autoseason-mobile.png");
+					bottom: -4px;
+					left: -4px;
+					width: 72px;
+					height: 76px;
+				}
 				.collections-spring__name{
 					position: absolute;
 					top: 10px;
@@ -304,8 +365,13 @@
 			}
 			&--running{
 				grid-area: running;
-				background-image: url("../img/running-mobile.png");
-				background-size: 39px 98px;
+				&:before{
+					background-image: url("../img/running-mobile.png");
+					bottom: -4px;
+					left: 0;
+					width: 39px;
+					height: 98px;
+				}
 				.collections-spring__name{
 					text-align: right;
 					position: absolute;

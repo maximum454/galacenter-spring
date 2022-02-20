@@ -22,6 +22,50 @@ body{
 .articles{
 	border-bottom: none;
 }
+.slider-populary {
+	@include r(767){
+		.swiper-wrapper{
+			grid-gap: 5px;
+		}
+	}
+}
+.products{
+	background-color: #fff;
+	padding: 4px 30px 30px;
+	margin-bottom: 0;
+	&__info{
+		margin-bottom: 16px;
+	}
+	&__name{
+		-webkit-line-clamp: 2;
+		height: 38px;
+		text-overflow: ellipsis;
+		margin-bottom: 7px;
+	}
+	&__price{
+		margin-bottom: 0;
+	}
+	&__row{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.btn{
+		background-color: #EFE9D8;
+		padding: 10px 14px;
+		img{
+			vertical-align: baseline;
+			margin-right: 8px;
+		}
+	}
+	@include r(767){
+
+		padding: 7px;
+		&__row{
+			flex-wrap: wrap;
+		}
+	}
+}
 
 
 @import "componets/banner-spring";
