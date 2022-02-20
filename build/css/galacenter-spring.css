@@ -31,16 +31,16 @@ body {
   background-position: top;
   background-size: 100%;
   background-attachment: fixed;
-  -webkit-transition: background-position 1s ease;
-  -o-transition: background-position 1s ease;
-  transition: background-position 1s ease;
+  -webkit-transition: background-position .3s ease;
+  -o-transition: background-position .3s ease;
+  transition: background-position .3s ease;
 }
 
 body.parallax {
   background-position: bottom;
-  -webkit-transition: background-position 1s ease;
-  -o-transition: background-position 1s ease;
-  transition: background-position 1s ease;
+  -webkit-transition: background-position .3s ease;
+  -o-transition: background-position .3s ease;
+  transition: background-position .3s ease;
 }
 
 .footer {

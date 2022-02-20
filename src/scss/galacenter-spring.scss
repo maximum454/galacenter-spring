@@ -7,10 +7,10 @@ body{
 	background-position: top;
 	background-size: 100%;
 	background-attachment: fixed;
-	transition: background-position 1s ease;
+	transition: background-position .3s ease;
 	&.parallax{
 		background-position: bottom;
-		transition: background-position 1s ease;
+		transition: background-position .3s ease;
 	}
 }
 .footer{

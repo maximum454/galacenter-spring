@@ -8,7 +8,7 @@ $(function (){
             $('body').css({'background-position': 'bottom'});
         }else{
             $('body').removeClass('parallax')
-            $('body').css({'background-position': '0 -'+(scrollT/3)+'px'});
+            $('body').css({'background-position': '0 -'+(scrollT/2.5)+'px'});
         }
     })
 })
