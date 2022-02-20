@@ -2,7 +2,19 @@
 @import "./fonts";
 
 body{
-	background-color: #B2E0E7;
+	background-image: url("../img/bg.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	background-attachment: fixed;
+	transition: background-position 1s ease;
+	&.parallax{
+		background-position: bottom;
+		transition: background-position 1s ease;
+	}
+}
+.footer{
+	margin-top: 0;
 }
 .btn{
 	&--sping{
@@ -31,7 +43,7 @@ body{
 }
 .products{
 	background-color: #fff;
-	padding: 4px 30px 30px;
+	padding: 10px 30px 30px;
 	margin-bottom: 0;
 	&__info{
 		margin-bottom: 16px;
@@ -49,6 +61,11 @@ body{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+	.add_to_cart_block{
+		margin-left: auto;
+		margin-right: 0;
 	}
 	.btn{
 		background-color: #EFE9D8;
@@ -59,11 +76,7 @@ body{
 		}
 	}
 	@include r(767){
-
 		padding: 7px;
-		&__row{
-			flex-wrap: wrap;
-		}
 	}
 }
 

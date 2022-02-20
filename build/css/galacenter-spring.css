@@ -26,7 +26,25 @@
 }
 
 body {
-  background-color: #B2E0E7;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-attachment: fixed;
+  -webkit-transition: background-position 1s ease;
+  -o-transition: background-position 1s ease;
+  transition: background-position 1s ease;
+}
+
+body.parallax {
+  background-position: bottom;
+  -webkit-transition: background-position 1s ease;
+  -o-transition: background-position 1s ease;
+  transition: background-position 1s ease;
+}
+
+.footer {
+  margin-top: 0;
 }
 
 .btn--sping {
@@ -49,7 +67,7 @@ body {
 
 .products {
   background-color: #fff;
-  padding: 4px 30px 30px;
+  padding: 10px 30px 30px;
   margin-bottom: 0;
 }
 
@@ -79,6 +97,13 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products .add_to_cart_block {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .products .btn {
@@ -572,11 +597,6 @@ body {
 
   .products {
     padding: 7px;
-  }
-
-  .products__row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 
   .banner-spring {

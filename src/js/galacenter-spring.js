@@ -35,3 +35,29 @@ const swiperProducts = new Swiper('.swiper-container-products', {
     }
 
 });
+
+function getScrollY()
+{
+    scrollY = 0;
+    if (typeof window.pageYOffset == "number") {
+        scrollY = window.pageYOffset;
+    } else if (document.documentElement && document.documentElement.scrollTop) {
+        scrollY = document.documentElement.scrollTop;
+    }  else if (document.body && document.body.scrollTop) {
+        scrollY = document.body.scrollTop;
+    } else if (window.scrollY) {
+        scrollY = window.scrollY;
+    }
+    return scrollY;
+}
+
+$(function (){
+    const bodyHeight = $('body').outerHeight()/2;
+    $(document).on('scroll', function (e){
+        if ( $(window).scrollTop() >= bodyHeight ){
+            $('body').addClass('parallax')
+        }else{
+            $('body').removeClass('parallax')
+        }
+    })
+})
